@@ -1,1 +1,87 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Blimone';
+  src: local('Blimone Bold'), local('Blimone-Bold'),
+  url('assets/blimone-bold-inktrap.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PunkRocker';
+  src: url('assets/fonts/PunkRocker-Regular.eot');
+  src: local('PunkRocker Regular'), local('PunkRocker-Regular'),
+  url('assets/fonts/PunkRocker-Regular.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/PunkRocker-Regular.woff2') format('woff2'),
+  url('assets/fonts/PunkRocker-Regular.woff') format('woff'),
+  url('assets/fonts/PunkRocker-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PunkRocker Rough';
+  src: url('assets/fonts/PunkRocker-Rough.eot');
+  src: local('PunkRocker Rough'), local('PunkRocker-Rough'),
+  url('assets/fonts/PunkRocker-Rough.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/PunkRocker-Rough.woff2') format('woff2'),
+  url('assets/fonts/PunkRocker-Rough.woff') format('woff'),
+  url('assets/fonts/PunkRocker-Rough.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PunkRocker Stamp';
+  src: url('assets/fonts/PunkRocker-Stamp.eot');
+  src: local('PunkRocker Stamp'), local('PunkRocker-Stamp'),
+  url('assets/fonts/PunkRocker-Stamp.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/PunkRocker-Stamp.woff2') format('woff2'),
+  url('assets/fonts/PunkRocker-Stamp.woff') format('woff'),
+  url('assets/fonts/PunkRocker-Stamp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+.f-bilmone {
+  font-family: 'Blimone', sans-serif;
+}
+
+.f-punk-rocker {
+  font-family: 'PunkRocker', sans-serif;
+}
+
+
+:root {
+  --gradient-color: linear-gradient(180deg, rgba(12,29,48,1) 5.61%, rgba(11,15,24,1) 33%);
+  --gradient-reverse-color: linear-gradient(0deg, rgba(12,29,48,1) 17%, rgba(11,15,24,1) 100%);
+  --primary-action: #85d7e9;
+  --primary-red: #ab1f40;
+  --color-text: #e1dfdd;
+  --primary-color: rgba(12,29,48,1);
+  --primary-light-color: rgb(68, 82, 98);
+  --primary-dark-color: linear-gradient(180deg, rgba(12,29,48,1) 0%, rgba(11,15,24,1) 1%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background-image: var(--gradient-color);
+  background-size: 100% 300%;
+  background-position-y: bottom;
+  color: white;
+  scroll-snap-type: y mandatory;
+}
